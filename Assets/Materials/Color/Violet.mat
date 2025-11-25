@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pink
+  m_Name: Violet
   m_Shader: {fileID: -6465566751694194690, guid: edd7abf643fa4bc4e8561d4c280c97cf, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -166,14 +166,14 @@ Material:
     - _UseSpecular: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.9339623, g: 0.46257564, b: 0.7811501, a: 1}
+    - _BaseColor: {r: 0.5148573, g: 0, b: 0.90099996, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 0, a: 1}
     - _HColor: {r: 1, g: 1, b: 1, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 0.37366804, g: 0.0509804, b: 0.47058824, a: 0.5}
+    - _RimColor: {r: 0.47058824, g: 0.37243137, b: 0.0509804, a: 0.5}
     - _SColor: {r: 0.2830189, g: 0.2790139, b: 0.2790139, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
