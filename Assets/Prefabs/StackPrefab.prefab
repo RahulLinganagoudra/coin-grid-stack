@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf56b7639e0db84aac096f12fe88a36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stackOffset: {x: 0, y: 0.1, z: -0.1}
+  stackOffset: {x: 0, y: 0.15, z: -0.15}
   mergeAnimationDelay: 0.05
   cellAddDuration: 0.3

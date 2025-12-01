@@ -13,12 +13,44 @@ public class Grid2D : GridSystem2D<CellData>
 	[Header("Drop Settings")]
 	[SerializeField] private float dropDuration = 0.5f;
 	[SerializeField] private Ease dropEase = Ease.OutBack;
-
+	[SerializeField] Vector2 CellSizeO = new Vector2(0.8f, 1f);
 	public static bool CanInteract = true;
 
 
 	protected override void Awake()
 	{
+	}
+
+	public override Vector3 GetWorldPosition(int x, int y, bool snapToGrid = true)
+	{
+		Vector2 halfGrid = new Vector2(GridSize.x / 2f, GridSize.y / 2f);
+
+		// Base bottom-left calculation
+		Vector3 worldPos = new Vector3(
+			(x - halfGrid.x) * CellSizeO.x,
+			(y - halfGrid.y) * CellSizeO.y,
+			0f
+		) + transform.position;
+
+		if (!snapToGrid)
+			return worldPos;
+
+		// Add half cell offset for center
+		return worldPos + new Vector3(CellSizeO.x * 0.5f, CellSizeO.y * 0.5f, 0f);
+	}
+
+	public override void GetGridPosition(Vector3 worldPosition, out int x, out int y)
+	{
+		// Convert world  local grid coordinates
+		float relativeX = (worldPosition.x - transform.position.x) / CellSizeO.x;
+		float relativeY = (worldPosition.y - transform.position.y) / CellSizeO.y;
+
+		x = Mathf.FloorToInt(relativeX + GridSize.x / 2f);
+		y = Mathf.FloorToInt(relativeY + GridSize.y / 2f);
+
+		// Clamp safely
+		x = Mathf.Clamp(x, 0, GridSize.x - 1);
+		y = Mathf.Clamp(y, 0, GridSize.y - 1);
 	}
 
 	/// <summary>

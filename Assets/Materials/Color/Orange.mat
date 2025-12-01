@@ -98,19 +98,19 @@ Material:
     - _RampBandsSmoothing: 0.1
     - _RampOffset: 0
     - _RampScale: 1
-    - _RampSmoothing: 0.948
-    - _RampThreshold: 0.843
+    - _RampSmoothing: 0.471
+    - _RampThreshold: 0.776
     - _RampType: 0
     - _ReceiveShadowsOff: 1
     - _ReflectionMapType: 0
     - _ReflectionSmoothness: 0.5
     - _RenderingMode: 0
-    - _RimMax: 1.12
-    - _RimMin: 1.24
+    - _RimMax: 1
+    - _RimMin: 0.5
     - _ShadowColorLightAtten: 1
     - _SingleIndirectColor: 0
     - _SpecularMapType: 0
-    - _SpecularRoughness: 0.568
+    - _SpecularRoughness: 0.4
     - _SpecularToonSize: 0.25
     - _SpecularToonSmoothness: 0.05
     - _SpecularType: 0
@@ -131,13 +131,13 @@ Material:
     - _UseSpecular: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.87058824, g: 0.49513012, b: 0.09019608, a: 1}
+    - _BaseColor: {r: 0.8962264, g: 0.6209142, b: 0.10568706, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 0, a: 1}
     - _HColor: {r: 1, g: 1, b: 1, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 0.0509804, g: 0.111273095, b: 0.47058824, a: 0.5}
-    - _SColor: {r: 0.2830189, g: 0.2790139, b: 0.2790139, a: 1}
-    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+    - _SColor: {r: 0.3773585, g: 0.1599804, b: 0.019579923, a: 1}
+    - _SpecularColor: {r: 0.9811321, g: 0.52182907, b: 0.124955505, a: 1}
   m_BuildTextureStacks: []
