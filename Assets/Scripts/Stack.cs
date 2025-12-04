@@ -103,6 +103,12 @@ public class Stack : MonoBehaviour
 
 		IEnumerator PlayMergeAnimationRoutine()
 		{
+			for (int i = cells.Count - 1; i >= 0; i--)
+			{
+				cells[i].ColorizeSprites();
+			}
+			yield return new WaitForSeconds(.5f);
+
 			float delayBetweenCells = 0.081f; // Customize this delay as desired
 			Sequence mergeSequence = DOTween.Sequence();
 

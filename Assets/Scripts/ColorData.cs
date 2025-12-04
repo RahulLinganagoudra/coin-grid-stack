@@ -4,6 +4,9 @@ using UnityEngine;
 public class ColorData : ScriptableObject
 {
 	[SerializeField] private Material cubeMaterial;
+	[SerializeField] private Material coloredTiles;
 
-	public Material CubeMaterial { get => cubeMaterial;}
+
+	public Material CubeMaterial { get => cubeMaterial; }
+	public Material ColoredMat { get => coloredTiles; }
 }

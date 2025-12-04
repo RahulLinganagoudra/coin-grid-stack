@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7568a0f7c34e9d4685e86648b3c3c03, type: 3}
+  m_Name: Sledge
+  m_EditorClassIdentifier: 
+  cubeMaterial: {fileID: 2100000, guid: d6c9e3ea76cce8b49a4e30738f03eaba, type: 2}
+  coloredTiles: {fileID: 2100000, guid: 8fbc0d7fe5fec3546ab21c9d66f8b665, type: 2}

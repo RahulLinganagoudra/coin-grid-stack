@@ -47,9 +47,16 @@ public class CellData : MonoBehaviour
 		colorData = color;
 		if (colorData != null && meshRenderer != null)
 		{
-			meshRenderer.material = colorData.CubeMaterial;
+			meshRenderer.sharedMaterial = colorData.CubeMaterial;
 		}
 		UnityEditor.EditorUtility.SetDirty(this);
+	}
+	public void ColorizeSprites()
+	{
+		if (colorData != null && meshRenderer != null)
+		{
+			meshRenderer.sharedMaterial = colorData.ColoredMat;
+		}
 	}
 
 	/// <summary>
@@ -73,6 +80,12 @@ public class CellData : MonoBehaviour
 	{
 		if (meshRenderer == null)
 			meshRenderer = GetComponentInChildren<MeshRenderer>();
+		if (colorData == null)
+			return;
+		if (colorData != null && meshRenderer != null)
+		{
+			meshRenderer.sharedMaterial = colorData.CubeMaterial;
+		}
 		UnityEditor.EditorUtility.SetDirty(this);
 	}
 #endif
